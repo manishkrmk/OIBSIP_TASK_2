@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first portfolio</title>
+<style type="text/css">
+	*{padding: 0; margin:0; box-sizing: border-box;}
+	header{
+		font-family: sans-serif;
+		width: 100%;
+		height: 100vh;
+		
+			}
+	nav{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		
+	}
+	.logo{
+		font-size:2em; 
+		letter-spacing: 2px;
+	}
+	.menu a{
+		text-decoration: none;
+		color:black;
+		padding: 10px 20px;
+		font-size: 20px;
+		position:relative;
+
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top:0;
+		left:0;
+		width:0%;
+		height: 100%;
+		border-top: 2px solid black;
+		z-index: 1;
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width:90%;
+	}
+
+	.login a{
+		text-decoration: none;
+		color: white;
+		background:black;
+		padding: 10px 20px;
+		border-radius: 8px;
+		transition: 0.4s;
+	}
+	.login a:hover{
+			background: transparent;
+			border:1px solid black;
+			color: black;
+	}
+   .home__social{
+  display: flex;
+  flex-direction: column;
+  float:left;	
+	}
+	.home__social-icon{
+  width: max-content;
+  margin-bottom: 0;
+  font-size: 100px;
+  color: var(--second-color);
+	}
+	#h-text{
+			width: 100%;
+			height: 70%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		#h-text h1{
+			font-size: 3em;
+			
+		}
+		#h-text span{
+			color:rgb(23, 223, 43);
+		}
+		#h-text a{
+			text-decoration: none;
+			background: black;
+			color: white;
+			letter-spacing: 5px;
+			padding:10px 20px;
+			position: relative;
+			z-index: 1;
+		}
+
+	
+	#h-text a:before{
+		content: '';
+		position: absolute;
+		top:10px;
+		left:10px;
+		width:100%;
+		height: 100%;
+		border:1px solid black;
+		background: skyblue;
+		z-index: -1;
+
+	}
+
+
+		#h-text p{
+			margin-bottom: 10px;
+		}
+		#man{
+			position: absolute;
+			bottom: 0;
+			left: 350px;
+		}
+.logo{
+	margin-left: 110px;
+	
+}
+</style>
+
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo">
+			Creative<span style="color: rgb(218, 21, 21);">Lab</span>
+		</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Services</a>
+			<a href="#">Skills</a>
+			<a href="#">Contact</a>
+		</div>
+		<div class="login">
+			<a href="">Subscribe us</a>
+		</div>
+		
+	</nav>
+
+	<section id="h-text">
+		<div class="left">
+			<p>I'm a</p>
+			<h1>Front End Deve<span>loper</span></h1>
+			<p>Youtuber and Blogger</p>
+				<br>			<br>
+			<a href="mkresume.pdf">Resume</a>
+		</div>
+		
+		<div class="right">
+			<img src="img/manish.jpg" width="425" id="himg">
+		</div>	
+		
+
+	</section>
+	<section>
+		<div class="home__social">
+			<a href="" target="_blank" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+			
+			<a href="" target="_blank" class="home__social-icon"><i class="bx bxl-github"></i></a>
+			</div>
+	</section>
+	<p class="logo">
+		<a href="http://linkedin.com/in/manish-kumar-2b7bb0266"  rel="nofollow noreferrer">
+			<img src="linkedinlogo.png" width="35"></a>
+			&nbsp;
+		<a href="https://github.com/manishkrmk" rel="nofollow noreferrer">	
+		<img src="githublogo.png" width="35" ></a>
+		
+	</p >
+<img src="img/guitar.gif" width="175" id="man">
+</header>
+</body>
+</html>
+
+
